@@ -1,5 +1,6 @@
 ![header image](https://github.com/DouglasFreshHabian/TerminalFx/blob/main/Assets/3.png)
- 
+# Keep [Learning](https://github.com/DouglasFreshHabian/FreshPdfLibrary) And Stay [Fresh](https://www.youtube.com/@DouglasHabian-tq5ck)
+
 ## 🎨 Terminal Color Reference Scripts:
 
 ### A simple set of scripts and tools for visualizing ANSI terminal colors in both standard and extended 256-color modes.
