@@ -198,6 +198,11 @@ Welcome to Cyberpunk Command Center v1.0 — we’re about to go full Mr. Robot,
 * ⏳ Countdown Timers, Alerts & Self-Destruct Mode
 * 📺 Optional Retro VHS & Scanline Overlays
 
+### If you have not done so already, please head over to the channel and hit that subscribe button to show some support. Thank you!!!
+
+### 👍 [STAY FRESH](https://www.youtube.com/@DouglasHabian-tq5ck) 
+
+
 <!-- 
  _____              _       _____                        _          
 |  ___| __ ___  ___| |__   |  ___|__  _ __ ___ _ __  ___(_) ___ ___ 
@@ -206,7 +211,5 @@ Welcome to Cyberpunk Command Center v1.0 — we’re about to go full Mr. Robot,
 |_|  |_|  \___||___/_| |_| |_|  \___/|_|  \___|_| |_|___/_|\___|___/
         dfresh@tutanota.com Fresh Forensics, LLC 2025 -->
 
-  </script>
-</body>
-</html>
+ 
 
