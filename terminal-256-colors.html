@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>256 Terminal Colors</title>
+  <style>
+    body {
+      font-family: monospace;
+      background: #000;
+      color: #fff;
+      padding: 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(16, 60px);
+      gap: 4px;
+    }
+    .cell {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <h1>256 Terminal Colors</h1>
+  <div class="grid" id="color-grid"></div>
+
+  <script>
+    function getColor(n) {
+      if (n < 16) {
+        const basic = [
+          "#000000", "#800000", "#008000", "#808000",
+          "#000080", "#800080", "#008080", "#c0c0c0",
+          "#808080", "#ff0000", "#00ff00", "#ffff00",
+          "#0000ff", "#ff00ff", "#00ffff", "#ffffff"
+        ];
+        return basic[n];
+      } else if (n >= 16 && n <= 231) {
+        n -= 16;
+        let r = Math.floor(n / 36);
+        let g = Math.floor((n % 36) / 6);
+        let b = n % 6;
+        const scale = [0, 95, 135, 175, 215, 255];
+        return `rgb(${scale[r]}, ${scale[g]}, ${scale[b]})`;
+      } else {
+        let gray = 8 + (n - 232) * 10;
+        return `rgb(${gray}, ${gray}, ${gray})`;
+      }
+    }
+
+    window.onload = function () {
+      const grid = document.getElementById("color-grid");
+
+      for (let i = 0; i < 256; i++) {
+        const bg = getColor(i);
+        const luminance = bg.match(/\d+/g)
+          .map(Number)
+          .reduce((a, b) => a + b) / 3;
+        const textColor = luminance > 127 ? "#000" : "#fff";
+
+        const div = document.createElement("div");
+        div.className = "cell";
+        div.style.backgroundColor = bg;
+        div.style.color = textColor;
+        div.textContent = i;
+        grid.appendChild(div);
+      }
+    };
+  </script>
+</body>
+</html>
