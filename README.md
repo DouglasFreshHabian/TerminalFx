@@ -5,13 +5,13 @@
 ### A simple set of scripts and tools for visualizing ANSI terminal colors in both standard and extended 256-color modes.
 #### Included:
 
-* 0️⃣ ansi-foreground.sh – Displays all 256 foreground colors (38;5;<n>) in a grid.
+* 🥊 ansi-foreground.sh – Displays all 256 foreground colors (38;5;<n>) in a grid.
 
-* 1️⃣ ansi-background.sh – Shows all 256 background colors (48;5;<n>) in a grid.
+* 🤙 ansi-background.sh – Shows all 256 background colors (48;5;<n>) in a grid.
 
-* 2️⃣ ansi-combined.sh – Displays background colors with automatically chosen contrasting foreground text for readability.
+* 🤡 ansi-combined.sh – Displays background colors with automatically chosen contrasting foreground text for readability.
 
-* 3️⃣ terminal-256-colors.html – An HTML visual reference for all 256 terminal colors using inline RGB styles and dynamic contrast.
+* 💈 terminal-256-colors.html – An HTML visual reference for all 256 terminal colors using inline RGB styles and dynamic contrast.
 
 Perfect for developers, themers, and CLI artists who want a quick, visual way to reference terminal color codes.
 
